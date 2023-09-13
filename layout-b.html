@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Wirefram - Layout B</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <style>
+        .mybox1 {
+            background-color: tomato;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+
+        .mybox2 {
+            background-color: springgreen;
+            min-height: 200px;
+            margin: 20px 10px;
+            padding: 20px;
+        }
+
+        .mybg1 {
+            background-color: darkslategrey;
+        }
+
+
+    </style>
+
+</head>
+<body>
+<!-- mb-5 -> margin-bottom 5 -->
+    <header class="container-fluid mybg1 mb-5">
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="mybox1">LOGO</div>
+                </div>
+                <nav class="col">
+                    <div class="mybox1">NAV</div>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col">
+                <div class="mybox1">
+                    <p class="m-5 m-md-0 m-lg-n5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui tenetur sit. Laborum rerum voluptatibus non vero commodi ea numquam provident doloribus atque. Dicta, dolore reprehenderit. Itaque laudantium iure esse mollitia expedita voluptates, error, rerum dolor illum aut, porro impedit neque inventore et eum. Voluptatibus atque reiciendis fugit facilis. Qui ab similique magni repudiandae ipsam iusto illum dolores quasi totam, rerum aspernatur incidunt fuga architecto aut eveniet quo blanditiis aperiam corrupti reprehenderit, hic, dicta pariatur nemo cum. Quam rerum recusandae, ad neque animi eum officia, facere sunt incidunt illum rem consequatur amet dicta non quidem obcaecati voluptates tempora eos odit?</p>
+
+                    <!-- nested boxes require more rows and cols -->
+                    <!-- YOU MUST HAVE .row IN ORDER TO HAVE .col -->
+                    <div class="row">
+                        <div class="col mybox2 m-n5">Nest 1</div>
+                        <!-- negative margin -->
+                        <div class="col mybox2 mx-4">Nest 2</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <div class="mybox1">Feature 1</div>
+            </div>
+            <div class="col">
+                <div class="mybox1">Feature 2</div>
+            </div>
+            <div class="col">
+                <div class="mybox1">Feature 3</div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
